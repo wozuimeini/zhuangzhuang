@@ -1,0 +1,12 @@
+$width:1090px;
+.box{
+    width:$width;
+    height:7844px;
+    background:pink;
+    margin:0 auto;
+    .brand{
+        width:$width;
+        height:18px;
+        
+    }
+}

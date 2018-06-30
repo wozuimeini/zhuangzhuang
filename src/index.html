@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/font/iconfont.css">
+</head>
+<body>
+	<div class="header"></div>
+	<div class="container">
+        <div class="con-wrap">
+            <!--关于妆炫-->
+            <div class="con-w-top">
+                <!--左-->
+                <div id="c-w-a"></div>
+                <!--右-->
+                <div class="c-w-b">
+                    <h2 class="about">
+                        <img src="/img/about.jpg">
+                    </h2>
+                    <div class="c-w-b-2">
+                        <div class="c-w-b-tt">
+                            &nbsp;&nbsp;妆炫商城是由一群有梦想、爱美、渴望成功的90后年轻人众筹的一个美妆垂直电商平台，他们致力于打造一个质优价廉的正品化妆品网站。平台汇聚和精选数千个国内外化妆品品牌，主要有护肤品、彩妆、化妆品、香水、洗护、药妆、内衣等女性产品，让每个用户在这里，安全的购物，安心的使用。妆炫平台提供了互联网上最为广泛和齐全的品牌以及品种选择, 并且提供高效率的资讯和售后支持，让您足不出户购遍全球化妆品，让美妆炫动你的生活！<br>
+                            &nbsp;&nbsp;妆炫商城以众筹人才的方式聚集了一批既懂美妆行业又具有互联网基因的运营团队。妆炫商城将创新美妆电商的营销和运营方式，构建一个全新的B2C+B2B+O2O的化妆品品牌招商和零售平台。妆炫将坚持正品化妆品网站的方向，整合上游品牌商资源，构建美妆品牌生态库。<br>
+                            &nbsp;&nbsp;我们相信这群以众筹方式走到一起的小伙伴们，将在互联网平等而开放的世界里，释放理想和诚信，我们相信一群充满梦想的人，可以凭借着爱与执着，让你的美丽更简单！<br>
+                        </div>
+                        <p class="c-w-b-bb textright">
+                            <i class="icon-a"></i>
+                        </p>
+                    </div>
+                </div> 
+            </div>
+            <div class="con-w-bottom bot">
+                <ul class="cf">
+                    <li class="con-w-b-1">
+                        <i></i>
+                        <span>
+                            <em>品质保障</em>品质护航，购物无忧
+                        </span>
+                    </li>
+                    <li class="con-w-b-2">
+                        <i></i>
+                        <span>
+                            <em>千万口碑</em>百万用户的口碑选择
+                        </span>
+                    </li>
+                    <li class="con-w-b-3">
+                         <i></i>
+                        <span>
+                            <em>值得信赖美妆电商</em>100%信赖 100%保障
+                        </span>
+                    </li>
+                    <li class="con-w-b-4">
+                         <i></i>
+                        <span>
+                            <em>超高性价比</em>优质的产品+优惠的价格
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <!--热销美妆-->
+            <div class="con-hotCloth">
+                <b>
+                    <i></i>
+                    热销美妆
+                </b>
+                <s>HOT PRODUCTS</s>
+            </div>
+            <div class="con-hotDetail">
+                <ul class="hot cf" id="hot"></ul>
+            </div>
+            <script type="text/html" id="list_template">
+                {{each list prod}}
+                <li>
+                    <div class="hot-a-tt">
+                        <a href="/html/detail.html" target="_blank">
+                            <img src="{{prod.img}}">
+                        </a>
+                    </div>
+                    <p class="hot-a-bb">
+                        <a href="/html/detail.html" target-"_blank" tile="freezeframe祛斑霜">{{prod.desc}}</a>
+                    </p>
+                    <div class="hot-a-price cf">
+                        <span class="price">
+                            ￥<em>{{prod.price}}</em>
+                        </span>
+                        <del>￥{{prod.delprice}}</del>
+                        <span class="btn-shop">加入购物车</span>
+                    </div>
+                </li>
+                {{/each}}
+            </script>
+
+
+            <!--脸部护理-->
+            <div class="face">
+                <b>
+                    <i></i>
+                    脸部护理
+                </b>
+                <s>LianBu</s>
+            </div>
+            <div class="face-detail">
+                <ul class="cf" id="face_ul"></ul>
+            </div>
+            <script type="text/html" id="list2_template">
+                {{each list prod}}
+               <li>
+                        <div class="f-a-tt">
+                            <a href="/html/detail.html" target="_blank">
+                                <img src="{{prod.img}}">
+                            </a>
+                        </div>
+                        <p class="f-a-bb">
+                            <a href="/html/detail.html" target-"_blank" tile="freezeframe祛斑霜">{{prod.desc}}</a>
+                        </p>
+                        <div class="f-a-price cf">
+                            <span class="price">
+                                ￥<em>{{prod.price}}</em>
+                            </span>
+                            <del>￥{{prod.delprice}}</del>
+                            <span class="btn-shop">加入购物车</span>
+                        </div>
+                    </li>
+                {{/each}}
+            </script>
+
+            <!--身体护理-->
+             <div class="bodies">
+                <b>
+                    <i></i>
+                    身体护理
+                </b>
+                <s>Shenti</s>
+            </div>
+            <div class="bodies-detail">
+                <ul class="cf" id="bodies_ul"></ul>
+            </div>
+            <script type="text/html" id="list3_template">
+            {{each list prod}}
+                <li>
+                    <div class="bod-a-tt">
+                        <a href="/html/detail.html" target="_blank">
+                            <img src="{{prod.img}}">
+                        </a>
+                    </div>
+                    <p class="bod-a-bb">
+                        <a href="/html/detail.html" target-"_blank" tile="freezeframe祛斑霜">{{prod.desc}}</a>
+                    </p>
+                    <div class="bod-a-price cf">
+                        <span class="price">
+                            ￥<em>{{prod.price}}</em>
+                        </span>
+                        <del>￥{{prod.delprice}}</del>
+                        <span class="btn-shop">加入购物车</span>
+                    </div>
+                </li>
+            {{/each}}
+            </script>
+
+            <!--眼部护理-->
+            <div class="eyes">
+                <b>
+                    <i></i>
+                    眼部护理
+                </b>
+                <s>YanBu</s>
+            </div>
+            <div class="eyes-detail">
+                 <ul class="cf" id="eyes_ul"></ul>
+            </div>
+            <script type="text/html" id="list4_template">
+            {{each list prod}}
+                <li>
+                    <div class="eyes-a-tt">
+                        <a href="/html/detail.html" target="_blank">
+                            <img src="{{prod.img}}">
+                        </a>
+                    </div>
+                    <p class="eyes-a-bb">
+                        <a href="/html/detail.html" target-"_blank" tile="freezeframe祛斑霜">{{prod.desc}}</a>
+                    </p>
+                    <div class="eyes-a-price cf">
+                        <span class="price">
+                            ￥<em>{{prod.price}}</em>
+                        </span>
+                        <del>￥{{prod.delprice}}</del>
+                        <span class="btn-shop">加入购物车</span>
+                    </div>
+                </li>
+            {{/each}}
+            </script>
+
+
+            <!--头部护理-->
+            <div class="tip">
+                <b>
+                    <i></i>
+                    头部护理
+                </b>
+                <s>TouBu</s>
+            </div>
+            <div class="tip-detail">
+                 <ul class="cf" id="tip_ul"></ul>
+            </div>
+            <script type="text/html" id="list5_template">
+            {{each list prod}}
+                <li>
+                    <div class="tip-a-tt">
+                        <a href="/html/detail.html" target="_blank">
+                            <img src="{{prod.img}}">
+                        </a>
+                    </div>
+                    <p class="tip-a-bb">
+                        <a href="/html/detail.html" target-"_blank" tile="freezeframe祛斑霜">{{prod.desc}}</a>
+                    </p>
+                    <div class="tip-a-price cf">
+                        <span class="price">
+                            ￥<em>{{prod.price}}</em>
+                        </span>
+                        <del>￥{{prod.delprice}}</del>
+                        <span class="btn-shop">加入购物车</span>
+                    </div>
+                </li>
+            {{/each}}
+            </script>
+
+
+            <!--脚部保养-->
+            <div class="fot">
+                <b>
+                    <i></i>
+                    脚部保养
+                </b>
+                <s>JiaoBu</s>
+            </div>
+            <div class="fot-detail">
+                 <ul class="cf" id="fot_ul"></ul>
+            </div>
+            <script type="text/html" id="list6_template">
+            {{each list prod}}
+                <li>
+                    <div class="fot-a-tt">
+                        <a href="/html/detail.html" target="_blank">
+                            <img src="{{prod.img}}">
+                        </a>
+                    </div>
+                    <p class="fot-a-bb">
+                        <a href="/html/detail.html" target-"_blank" tile="freezeframe祛斑霜">{{prod.desc}}</a>
+                    </p>
+                    <div class="fot-a-price cf">
+                        <span class="price">
+                            ￥<em>{{prod.price}}</em>
+                        </span>
+                        <del>￥{{prod.delprice}}</del>
+                        <span class="btn-shop">加入购物车</span>
+                    </div>
+                </li>
+            {{/each}}
+            </script>
+
+            <!--<li>
+                    <div class="fot-a-tt">
+                        <a href="#" target="_blank">
+                            <img src="/img/fot-1.jpg">
+                        </a>
+                    </div>
+                    <p class="fot-a-bb">
+                        <a href="#" target-"_blank" tile="freezeframe祛斑霜">freezeframe祛斑霜</a>
+                    </p>
+                    <div class="fot-a-price cf">
+                        <span class="price">
+                            ￥<em>295</em>
+                        </span>
+                        <del>￥295</del>
+                        <span class="btn-shop">加入购物车</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="fot-a-tt">
+                        <a href="#" target="_blank">
+                            <img src="/img/fot-2.jpg">
+                        </a>
+                    </div>
+                    <p class="fot-a-bb">
+                        <a href="#" target-"_blank" tile="freezeframe祛斑霜">freezeframe祛斑霜</a>
+                    </p>
+                    <div class="fot-a-price cf">
+                        <span class="price">
+                            ￥<em>295</em>
+                        </span>
+                        <del>￥295</del>
+                        <span class="btn-shop">加入购物车</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="fot-a-tt">
+                        <a href="#" target="_blank">
+                            <img src="/img/fot-3.jpg">
+                        </a>
+                    </div>
+                    <p class="fot-a-bb">
+                        <a href="#" target-"_blank" tile="freezeframe祛斑霜">freezeframe祛斑霜</a>
+                    </p>
+                    <div class="fot-a-price cf">
+                        <span class="price">
+                            ￥<em>295</em>
+                        </span>
+                        <del>￥295</del>
+                        <span class="btn-shop">加入购物车</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="fot-a-tt">
+                        <a href="#" target="_blank">
+                            <img src="/img/fot-4.jpg">
+                        </a>
+                    </div>
+                    <p class="fot-a-bb">
+                        <a href="#" target-"_blank" tile="freezeframe祛斑霜">freezeframe祛斑霜</a>
+                    </p>
+                    <div class="fot-a-price cf">
+                        <span class="price">
+                            ￥<em>295</em>
+                        </span>
+                        <del>￥295</del>
+                        <span class="btn-shop">加入购物车</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="fot-a-tt">
+                        <a href="#" target="_blank">
+                            <img src="/img/fot-5.jpg">
+                        </a>
+                    </div>
+                    <p class="fot-a-bb">
+                        <a href="#" target-"_blank" tile="freezeframe祛斑霜">freezeframe祛斑霜</a>
+                    </p>
+                    <div class="fot-a-price cf">
+                        <span class="price">
+                            ￥<em>295</em>
+                        </span>
+                        <del>￥295</del>
+                        <span class="btn-shop">加入购物车</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="fot-a-tt">
+                        <a href="#" target="_blank">
+                            <img src="/img/fot-6.jpg">
+                        </a>
+                    </div>
+                    <p class="fot-a-bb">
+                        <a href="#" target-"_blank" tile="freezeframe祛斑霜">freezeframe祛斑霜</a>
+                    </p>
+                    <div class="fot-a-price cf">
+                        <span class="price">
+                            ￥<em>295</em>
+                        </span>
+                        <del>￥295</del>
+                        <span class="btn-shop">加入购物车</span>
+                    </div>
+                </li>-->
+
+            <!--相关专题-->
+            <div class="related">
+                <b>
+                    <i></i>
+                    相关专题
+                </b>
+                <s>RELATED TOPICS</s>
+            </div>
+            <div class="rel-detail mb30">
+                <div class="rel-lt relative">
+                    <a href="#" target="_blank" title="鸡皮肤怎么消除最有效">
+                        <img src="/img/related-1.gif" alt="鸡皮肤怎么消除最有效">
+                    </a>
+                </div>
+                <div class="rel-rt">
+                    <div class="rel-rt-1 relative">
+                        <a href="#" target="_blank" title="狐臭怎么去除小窍门">
+                            <img src="/img/related-2.gif" alt="狐臭怎么去除小窍门">
+                        </a>
+                    </div>
+                    <div class="rel-rt-2 cf">
+                        <div class="rel-rt-2-ll relative">
+                            <a href="#" target="_blank" title="女孩怎么丰胸">
+                                <img src="/img/related-3.jpg" alt="女孩怎么丰胸">
+                            </a>
+                        </div>
+                        <div class="rel-rt-2-rr relative">
+                            <a href="#" target="_blank" title="减肥药的危害">
+                                <img src="/img/related-4.jpg" alt="减肥药的危害">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--用户评价-->
+            <div class="user">
+                <!--左边-->
+                <div class="user-left">
+                    <!--左上-->
+                    <div class="user-l-top">
+                        <div class="user-l-top-tt">
+                            <b>用户评价</b>
+                            <a href="#" title="用户评价" target="_blank">更多 ></a>
+                        </div>
+                        <div class="user-l-top-bb">
+                            <ul class="bb-produrts">
+                                <li>
+                                    <dl>
+                                        <dt>
+                                            <a target="_blank" title="瑜缇诗滋养嫩肤靓颜面膜10片">
+                                                <img src="/img/user-s1.jpg">
+                                            </a>
+                                        </dt>
+                                        <dd>
+                                            <p>瑜缇诗滋养嫩肤靓颜面膜10片</p>
+                                            <span>收到啦,迫不及待的打开了,包装很给力,高大上,就是不知道效果是不..</span>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>
+                                            <a target="_blank" title="雪伽倪祛斑霜30g">
+                                                <img src="/img/user-s2.png">
+                                            </a>
+                                        </dt>
+                                        <dd>
+                                            <p>雪伽倪祛斑霜30g</p>
+                                            <span>产品很好，希望能改善我的状况</span>
+                                        </dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--左下-->
+                    <div class="user-l-bottom">
+                        <div class="user-l-bottom-tt">
+                            <b>美妆资讯</b>
+                            <a href="#" title="美妆资讯" target="_blank">更多 ></a>
+                        </div>
+                         <div class="user-l-bottom-bb">
+                            <div class="bb-left">
+                                <a href="#" target="_blank" title="雅比特香水课堂：有味道的男人，才招人喜欢">
+                                    <img src="/img/info.jpg" alt="雅比特香水课堂：有味道的男人，才招人喜欢">
+                                </a>
+                                <p class="bb-l-word">
+                                    <a target="_blank" title="雅比特香水课堂：有味道的男人，才招人喜欢">雅比特香水课堂：有味道的男人，才招人喜欢..</a>
+                                </p>
+                            </div>
+                            <div class="bb-right">
+                                <ul>
+                                    <li>
+                                        <a href="#" target="_blank" title="如何正确祛斑,怎么祛斑才不反弹?亲身经历告..">
+                                            <span title="如何正确祛斑,怎么祛斑才不反弹?亲身经历告..">如何正确祛斑,怎么祛斑才不反弹?亲身经历告..</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank" title="干性皮肤如何祛斑？用这些方法淡斑美白有效！">
+                                            <span title="干性皮肤如何祛斑？用这些方法淡斑美白有效！">干性皮肤如何祛斑？用这些方法淡斑美白有效！</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank" title="雀斑瑕疵如何去除，这些生活中的天然祛斑材料">
+                                            <span title="雀斑瑕疵如何去除，这些生活中的天然祛斑材料">雀斑瑕疵如何去除，这些生活中的天然祛斑材料</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank" title="头发稀疏的女生烫什么头发好看">
+                                            <span title="头发稀疏的女生烫什么头发好看">头发稀疏的女生烫什么头发好看</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank" title="基础剪发-剪发术语">
+                                            <span title="基础剪发-剪发术语">基础剪发-剪发术语</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank" title="补水？什么最有效！那就是它！">
+                                            <span title="补水？什么最有效！那就是它！">补水？什么最有效！那就是它！</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank" title="皮肤干到爆痘？补水要趁“藻”！这个夏天有救了">
+                                            <span title="皮肤干到爆痘？补水要趁“藻”！这个夏天有救了">皮肤干到爆痘？补水要趁“藻”！这个夏天有救了</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank" title="一个不起眼的素颜霜">
+                                            <span title="一个不起眼的素颜霜">一个不起眼的素颜霜</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--右边-->
+                <div class="user-right">
+                    <!--右上-->
+                    <div class="user-r-top">
+                        <b>答疑解惑</b>
+                        <a href="#" title="答疑解惑" target="_blank">更多 ></a>
+                    </div>
+                    <!--右下-->
+                    <div class="user-r-bottom">
+                        <div class="user-r-over">
+                            <ul>
+                                <li>
+                                    <div class="over-q-1">
+                                        <div class="q-1-left">Q</div>
+                                        <div class="q-1-right">
+                                                <h2>
+                                                    <a href="#" target="_blank" title="雅诗敦护肤品口碑怎么样">
+                                                        雅诗敦护肤品口碑怎么样
+                                                    </a>
+                                                </h2>
+                                                <p>共有<a target="_blank" title="查看回答">3</a>个回答</p>
+                                        </div>
+                                    </div>
+                                    <div class="over-a-1">
+                                        <div class="a-1-left">A</div>
+                                        <div class="a-1-right">
+                                            <p>我前不久买了 一款cream，感觉挺滋润的，还不错。在香港的时候到sasa买的。因为价格也不低，所以当时有些犹豫，不过下次去还会再买的那种。她家乳液，过敏的时候特..</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="over-q-2">
+                                        <div class="q-2-left">Q</div>
+                                        <div class="q-2-right">
+                                                <h2>
+                                                    <a href="#" target="_blank" title="比菲雅祛斑霜真的有效果吗">
+                                                        比菲雅祛斑霜真的有效果吗
+                                                    </a>
+                                                </h2>
+                                                <p>共有<a target="_blank" title="查看回答">4</a>个回答</p>
+                                        </div>
+                                    </div>
+                                    <div class="over-a-2">
+                                        <div class="a-2-left">A</div>
+                                        <div class="a-2-right">
+                                            <p>比菲雅祛斑霜给了我一个大大的惊喜。一个多月的时间我脸上的顽固的雀斑就有变淡的痕迹，刚开始我也不相信这是真的，感觉好像做梦一样。但这就是真的，我以前的皮肤发黄、发..</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="over-q-3">
+                                        <div class="q-3-left">Q</div>
+                                        <div class="q-3-right">
+                                                <h2>
+                                                    <a href="#" target="_blank" title="地球妈妈喷雾好用吗">
+                                                        地球妈妈喷雾好用吗
+                                                    </a>
+                                                </h2>
+                                                <p>共有<a target="_blank" title="查看回答">4</a>个回答</p>
+                                        </div>
+                                    </div>
+                                    <div class="over-a-3">
+                                        <div class="a-3-left">A</div>
+                                        <div class="a-3-right">
+                                            <p>使用方法：可以经常反复使用（每天2-3次），冰箱保存的话对痔疮效果更好。开罐后冰箱可保存36个月。</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--护肤百科-->
+            <div class="skin">
+                <b>
+                    <i></i>
+                    护肤百科
+                </b>
+                <s>COSMETICS BAIKE</s>
+                <a href="#" title="美妆资讯" target="_blank">更多 ></a>
+            </div>
+            <div class="skin-detail">
+                <div class="skin-d-top">
+                    <a href="#" title="祛痘膏" target="_blank">
+                        <img src="/img/hufu-1.jpg" alt="祛痘膏">
+                    </a>
+                    <a href="#" title="快速祛痘印的小窍门" target="_blank">
+                        <img src="/img/hufu-2.jpg" alt="快速祛痘印的小窍门">
+                    </a>
+                    <a href="#" title="什么东西祛痘印最快" target="_blank">
+                        <img src="/img/hufu-3.jpg" alt="什么东西祛痘印最快">
+                    </a>
+                    <a href="#" title="祛痘印最快最好的方法" target="_blank">
+                        <img src="/img/hufu-4.jpg" alt="祛痘印最快最好的方法">
+                    </a>
+                    <a href="#" title="怎样能快速祛痘印" target="_blank">
+                        <img src="/img/hufu-5.jpg" alt="怎样能快速祛痘印">
+                    </a>
+                    <a href="#" title="祛痘印效果最好的产品" target="_blank">
+                        <img src="/img/hufu-6.jpg" alt="祛痘印效果最好的产品">
+                    </a>
+                    <a href="#" title="祛斑小妙招快速祛斑" target="_blank">
+                        <img src="/img/hufu-7.jpg" alt="祛斑小妙招快速祛斑">
+                    </a>
+                    <a href="#" title="怎样正确祛斑" target="_blank">
+                        <img src="/img/hufu-8.jpg" alt="怎样正确祛斑">
+                    </a>
+                </div>
+                <div class="skin-d-bottom">
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                    <a href="#" title="祛痘产品哪个最有效果" target="_blank">祛痘产品哪个最有效果</a>
+                </div>
+            </div>
+
+            <!--美妆相册-->
+            <div class="beauty">
+                <b>
+                    <i></i>
+                    美妆相册
+                </b>
+                <s>PRODRCTS PICTURE</s>
+                <a href="#" title="美妆资讯" target="_blank">更多 ></a>
+            </div>
+            <div class="beauty-detail">
+                <ul>
+                    <li>
+                        <a href="#" target="_blank" title="鼎济堂白立修修护遮盖套组">
+                            <img src="/img/beauty-1.jpg" alt="">
+                        </a>
+                        <p>
+                            <a href="#" target="_blank" title="鼎济堂白立修修护遮盖套组">鼎济堂白立修修护遮盖..</a>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" title="鼎济堂白立修修护遮盖套组">
+                            <img src="/img/beauty-2.jpg" alt="">
+                        </a>
+                        <p>
+                            <a href="#" target="_blank" title="鼎济堂白立修修护遮盖套组">鼎济堂白立修修护遮盖..</a>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" title="鼎济堂白立修修护遮盖套组">
+                            <img src="/img/beauty-3.jpg" alt="">
+                        </a>
+                        <p>
+                            <a href="#" target="_blank" title="鼎济堂白立修修护遮盖套组">鼎济堂白立修修护遮盖..</a>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" title="鼎济堂白立修修护遮盖套组">
+                            <img src="/img/beauty-4.jpg" alt="">
+                        </a>
+                        <p>
+                            <a href="#" target="_blank" title="鼎济堂白立修修护遮盖套组">鼎济堂白立修修护遮盖..</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <!--入驻品牌-->
+            <div class="brand">
+                <p>最新入驻品牌</p>
+                <div class="brand_detail">
+                    <div class="brand_list">
+                        <a href="#" title="瑞倪维儿" target="_blank">
+                            <img src="/img/brand-1.jpg" alt="瑞倪维儿">
+                        </a>
+                        <a href="#" title="瑞倪维儿" target="_blank">
+                            <img src="/img/brand-2.jpg" alt="瑞倪维儿">
+                        </a>
+                        <a href="#" title="瑞倪维儿" target="_blank">
+                            <img src="/img/brand-3.jpg" alt="瑞倪维儿">
+                        </a>
+                        <a href="#" title="瑞倪维儿" target="_blank">
+                            <img src="/img/brand-4.jpg" alt="瑞倪维儿">
+                        </a>
+                        <a href="#" title="瑞倪维儿" target="_blank">
+                            <img src="/img/brand-5.jpg" alt="瑞倪维儿">
+                        </a>
+                        <a href="#" title="瑞倪维儿" target="_blank">
+                            <img src="/img/brand-6.jpg" alt="瑞倪维儿">
+                        </a>
+                        <a href="#" title="瑞倪维儿" target="_blank">
+                            <img src="/img/brand-7.jpg" alt="瑞倪维儿">
+                        </a>
+                        <a href="#" title="瑞倪维儿" target="_blank">
+                            <img src="/img/brand-8.jpg" alt="瑞倪维儿">
+                        </a>
+                        <a href="#" title="瑞倪维儿" target="_blank">
+                            <img src="/img/brand-9.jpg" alt="瑞倪维儿">
+                        </a>
+                        <a href="#" title="瑞倪维儿" target="_blank">
+                            <img src="/img/brand-10.jpg" alt="瑞倪维儿">
+                        </a>
+                        <a href="#" title="瑞倪维儿" target="_blank">
+                            <img src="/img/brand-11.jpg" alt="瑞倪维儿">
+                        </a>
+                        <a href="#" title="瑞倪维儿" target="_blank">
+                            <img src="/img/brand-12.jpg" alt="瑞倪维儿">
+                        </a>
+                        <a href="#" title="瑞倪维儿" target="_blank">
+                            <img src="/img/brand-13.jpg" alt="瑞倪维儿">
+                        </a>
+                        <a href="#" title="瑞倪维儿" target="_blank">
+                            <img src="/img/brand-14.jpg" alt="瑞倪维儿">
+                        </a>
+                        <a href="#" title="瑞倪维儿" target="_blank">
+                            <img src="/img/brand-15.jpg" alt="瑞倪维儿">
+                        </a>
+                        <a href="#" title="瑞倪维儿" target="_blank">
+                            <img src="/img/brand-16.jpg" alt="瑞倪维儿">
+                        </a>
+                    </div>
+                    <p>
+                        <a href="#" target="_blank" title="神农本草">神农本草</a>
+                        <a href="#" target="_blank" title="佩顿">佩顿</a>
+                        <a href="#" target="_blank" title="佩恩">佩恩</a>
+                        <a href="#" target="_blank" title="安亭">安亭</a>
+                        <a href="#" target="_blank" title="安美拉">安美拉</a>
+                        <a href="#" target="_blank" title="神农本草">神农本草</a>
+                        <a href="#" target="_blank" title="佩顿">佩顿</a>
+                        <a href="#" target="_blank" title="佩恩">佩恩</a>
+                        <a href="#" target="_blank" title="安亭">安亭</a>
+                        <a href="#" target="_blank" title="安美拉">安美拉</a>
+                        <a href="#" target="_blank" title="神农本草">神农本草</a>
+                        <a href="#" target="_blank" title="佩顿">佩顿</a>
+                        <a href="#" target="_blank" title="佩恩">佩恩</a>
+                        <a href="#" target="_blank" title="安亭">安亭</a>
+                        <a href="#" target="_blank" title="安美拉">安美拉</a>
+                        <a href="#" target="_blank" title="神农本草">神农本草</a>
+                        <a href="#" target="_blank" title="佩顿">佩顿</a>
+                        <a href="#" target="_blank" title="佩恩">佩恩</a>
+                        <a href="#" target="_blank" title="安亭">安亭</a>
+                        <a href="#" target="_blank" title="安美拉">安美拉</a>
+                        <a href="#" target="_blank" title="神农本草">神农本草</a>
+                        <a href="#" target="_blank" title="佩顿">佩顿</a>
+                        <a href="#" target="_blank" title="佩恩">佩恩</a>
+                        <a href="#" target="_blank" title="安亭">安亭</a>
+                        <a href="#" target="_blank" title="安美拉">安美拉</a>
+                        <a href="#" target="_blank" title="神农本草">神农本草</a>
+                        <a href="#" target="_blank" title="佩顿">佩顿</a>
+                        <a href="#" target="_blank" title="佩恩">佩恩</a>
+                        <a href="#" target="_blank" title="安亭">安亭</a>
+                        <a href="#" target="_blank" title="JansonBe...">JansonBe...</a>
+                        <a href="#" target="_blank" title="花旗">花旗</a>
+                        <a href="#" target="_blank" title="御信堂">御信堂</a>
+                        <a href="#" target="_blank" title="博瑞兰">博瑞兰</a>
+                        <a href="#" target="_blank" title="芙丽美娜">芙丽美娜</a>
+                        <a href="#" target="_blank" title="神农本草">神农本草</a>
+                        <a href="#" target="_blank" title="佩顿">佩顿</a>
+                        <a href="#" target="_blank" title="佩恩">佩恩</a>
+                        <a href="#" target="_blank" title="安亭">安亭</a>
+                        <a href="#" target="_blank" title="安美拉">安美拉</a>
+                        <a href="#" target="_blank" title="神农本草">神农本草</a>
+                        <a href="#" target="_blank" title="佩顿">佩顿</a>
+                        <a href="#" target="_blank" title="佩恩">佩恩</a>
+                        <a href="#" target="_blank" title="安亭">安亭</a>
+                        <a href="#" target="_blank" title="安美拉">安美拉</a>
+                        <a href="#" target="_blank" title="神农本草">神农本草</a>
+                        <a href="#" target="_blank" title="佩顿">佩顿</a>
+                        <a href="#" target="_blank" title="佩恩">佩恩</a>
+                        <a href="#" target="_blank" title="安亭">安亭</a>
+                        <a href="#" target="_blank" title="安美拉">安美拉</a>
+                        <a href="#" target="_blank" title="神农本草">神农本草</a>
+                        <a href="#" target="_blank" title="佩顿">佩顿</a>
+                        <a href="#" target="_blank" title="佩恩">佩恩</a>
+                        <a href="#" target="_blank" title="安亭">安亭</a>
+                        <a href="#" target="_blank" title="安美拉">安美拉</a>
+                        <a href="#" target="_blank" title="神农本草">神农本草</a>
+                        <a href="#" target="_blank" title="佩顿">佩顿</a>
+                        <a href="#" target="_blank" title="佩恩">佩恩</a>
+                        <a href="#" target="_blank" title="安亭">安亭</a>
+                        <a href="#" target="_blank" title="安美拉">安美拉</a>
+                        <a href="#" target="_blank" title="神农本草">神农本草</a>
+                        <a href="#" target="_blank" title="佩顿">佩顿</a>
+                        <a href="#" target="_blank" title="佩恩">佩恩</a>
+                        <a href="#" target="_blank" title="安亭">安亭</a>
+                        <a href="#" target="_blank" title="JansonBe...">JansonBe...</a>
+                        <a href="#" target="_blank" title="花旗">花旗</a>
+                        <a href="#" target="_blank" title="御信堂">御信堂</a>
+                        <a href="#" target="_blank" title="博瑞兰">博瑞兰</a>
+                    </p>
+                </div>
+            </div>
+
+            <!--友情链接-->
+            <div class="friends">
+                <ul>
+                    <li><a href="#">友情链接</a></li>
+                    <li><a href="#">合作伙伴</a></li>
+                    <li>
+                        <b>链接合作 QQ</b>
+                        <a href="#" target="_blank">64666918</a>
+                        <b>(百度权重5以下免扰)</b>
+                    </li>
+                </ul>
+                <div class="friends-bottom">
+                    <p>
+                        <a href="#" title="电影天堂" target="_blank">电影天堂</a>
+                        <a href="#" title="娱乐新闻" target="_blank">娱乐新闻</a>
+                        <a href="#" title="伴奏中国" target="_blank">伴奏中国</a>
+                        <a href="#" title="防伪查询" target="_blank">防伪查询</a>
+                        <a href="#" title="小说阅读网" target="_blank">防伪查询</a>
+                        <a href="#" title="江苏人事..." target="_blank">江苏人事...</a>
+                        <a href="#" title="好看的动漫" target="_blank">好看的动漫</a>
+                        <a href="#" title="宠物论坛" target="_blank">宠物论坛</a>
+                        <a href="#" title="保健品" target="_blank">保健品</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--底部-->
+	<div class="footer"></div>
+
+	<script src="/lib/requirejs/require.js" data-main="/js/index"></script>
+</body>
+</html>

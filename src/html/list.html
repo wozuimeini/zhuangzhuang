@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="/css/list.css">
+</head>
+<body>
+    <div class="header"></div>
+    <div class="bread">
+        <b>您现在的位置：</b>
+        <a href="#" target="_blank">首页</a>
+        <span>&gt;</span> 
+        <a href="#">所有产品</a>
+    </div>
+    <div class="m-body">
+    <div class="main-cont">
+        <!---导航下的面板-->
+        <div class="main-middle-cont" id="main_middle_cont">
+            <ul class="categorylist">
+                <li>
+                    <div class="category-cont">
+                        <span class="main-category"><a href="/html/list.html" class="main-category">脸部护理</a></span>
+                        <ul class="category-cont-main">
+                            <li><a href="" title="祛痘" target="_blank">祛痘</a></li>
+                            <li><a href="" title="祛斑" target="_blank">祛斑</a></li>
+                            <li><a href="" title="祛疤" target="_blank">祛疤</a></li>
+                            <li><a href="" title="补水" target="_blank">补水</a></li>
+                            <li><a href="" title="美白" target="_blank">美白</a></li>
+                            <li><a href="" title="防晒" target="_blank">防晒</a></li>
+                            <li><a href="" title="红血丝" target="_blank">红血丝</a></li>
+                            <li><a href="" title="抗衰" target="_blank">抗衰</a></li>
+                            <li><a href="" title="去黑头" target="_blank">去黑头</a></li>
+                            <li><a href="" title="水光针" target="_blank">水光针</a></li>
+                            <li><a href="" title="素颜霜" target="_blank">素颜霜</a></li>
+                            <li><a href="" title="清洁" target="_blank">清洁</a></li>
+                            <li><a href="" title="去死皮" target="_blank">去死皮</a></li>
+                            <li><a href="" title="敏感肌肤" target="_blank">敏感肌肤</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="category-cont">                               
+                        <span class="main-category"><a href="" class="main-category">身体护理</a></span>
+                        <ul class="category-cont-main" style="overflow: hidden;">
+                            <li><a href="" title="减肥" target="_blank">减肥</a></li>
+                            <li><a href="" title="脱毛" target="_blank">脱毛</a></li>
+                            <li><a href="" title="私护" target="_blank">私护</a></li>
+                            <li><a href="" title="妊娠纹" target="_blank">妊娠纹</a></li>
+                           <li> <a href="" title="鸡皮肤" target="_blank">鸡皮肤</a></li>
+                           <li> <a href="" title="狐臭" target="_blank">狐臭</a></li>
+                            <li><a href="" title="丰胸" target="_blank">丰胸</a></li>
+                            <li><a href="" title="洗护" target="_blank">洗护</a></li>
+                           <li> <a href="" title="灰指甲" target="_blank">灰指甲</a></li>
+                            <li><a href="" title="香氛" target="_blank">香氛</a></li>
+                            <li><a href="" title="护手霜" target="_blank">护手霜</a></li>
+                           <li> <a href="" title="祛疣" target="_blank">祛疣</a></li>
+                            <li><a href="" title="祛湿" target="_blank">祛湿</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="category-cont">                               
+                        <span class="main-category"><a href="#" class="main-category">头部护理：</a></span>
+                        <ul class="category-cont-main">
+                            <li><a href="" title="脱发" target="_blank">脱发</a></li>
+                            <li><a href="" title="染发" target="_blank">染发</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="category_small">                                              
+                    <div class="category-cont">                               
+                        <span class="main-category"><a href="#" class="main-category">眼部护理：</a></span>
+                        <ul class="category-cont-main">
+                            <li><a href="" title="眼袋" target="_blank">眼袋</a></li>
+                            <li><a href="" title="黑眼圈" target="_blank">黑眼圈</a></li>
+                            <li><a href="" title="睫毛" target="_blank">睫毛</a></li>
+                            <li><a href="" title="眼纹" target="_blank">眼纹</a></li>
+                            <li><a href="" title="眼线笔" target="_blank">眼线笔</a></li>
+                            <li><a href="" title="双眼皮贴" target="_blank">双眼皮贴</a></li>
+                            <li><a href="" title="护理" target="_blank">护理</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="category_small">                                              
+                    <div class="category-cont">                               
+                        <span class="main-category"><a href="#" class="main-category">脚部保养：</a></span>
+                        <ul class="category-cont-main">
+                            <li><a href="" title="脚气" target="_blank">脚气</a></li>
+                            <li><a href="" title="足部保养" target="_blank">足部保养</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="category-cont">                               
+                        <span class="main-category"><a href="#" class="main-category">其他：</a></span>
+                        <ul class="category-cont-main">
+                            <!--choose_catgm大类下的小大类-->
+                            <li><a href="" title="医用" target="_blank">医用</a></li>
+                            <li><a href="" title="赠品" target="_blank">赠品</a></li>                       
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+     <script id="hot_sale_temp" type="text/html">
+        {{each list prod}}
+        <a href="/html/detail.html">
+            <li>
+                <span class="id" style="display: none;">{{prod.id}}</span>
+                <img src="{{prod.img}}" class="img-responsive"/>
+                <p>{{prod.title}}</p>
+                <p class="btn5">{{prod.price}}</p>
+                <del class="btn6">{{prod.delprice}}</del>
+                <span class="btn-shop">加入购物车</span>
+            </li>
+        </a>
+        {{/each}}
+    </script>
+    <ul class="grid_2">
+        <div class="clearfix"> </div>
+    </ul>
+</div>
+</div>
+</div>
+</div>
+    <div class="footer"></div>
+    <script src="/lib/requirejs/require.js" data-main="/js/list"></script>
+</body>
+</html>

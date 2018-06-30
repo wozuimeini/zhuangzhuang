@@ -1,0 +1,16 @@
+{
+    "res_code":0,
+    "res_error":"",
+    "res_body": {
+        "list" : 
+            [
+                {"id":1, "img":"../img/de-1.jpg", "title":"艾脐贴", "price":"￥88","delprice":"￥98"},
+                {"id":2, "img":"../img/de-2.jpg", "title":"益母草暖贴", "price":"￥138","delprice":"￥148"},
+                {"id":3, "img":"../img/de-3.jpg", "title":"久苗暖宫帖", "price":"￥378","delprice":"￥398"},
+                {"id":4, "img":"../img/de-4.jpg", "title":"艾叶贴","price":"￥78","delprice":"￥98"},
+                {"id":5, "img":"../img/de-5.jpg", "title":"艾修堂小筒灸", "price":"￥368","delprice":"￥398"},
+                {"id":6, "img":"../img/de-6.jpg", "title":"老北京足贴", "price":"￥189","delprice":"￥199"}
+            ]
+        
+    }
+}

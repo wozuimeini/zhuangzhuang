@@ -1,0 +1,1697 @@
+$width:1090px;
+$color:#969696;
+/*container*/
+.container{
+    background:#f5f5f5;
+    padding:20px 0 20px 0;
+    min-height:4000px;
+    .con-wrap{
+        width:$width;
+        margin:0 auto;
+        //background:pink;
+        min-height:4000px;
+        .con-w-top{
+            width:$width;
+            margin:0 auto;
+            border-top:1px solid #e8e8e8;
+            border-right:1px solid #e8e8e8;
+            border-:1px solid #e8e8e8;
+            background:white;
+            min-height:354px;
+            #c-w-a{
+                width:738px;
+                height:353px;
+                float:left;
+            }
+            .c-w-b{
+                width:350px;
+                height:353px;
+                float:right;
+                .about{
+                    margin:10px 0;
+                    text-align:center;
+                    padding:0;
+                }
+                .c-w-b-2{
+                    background:rgba(255,255,255,0.9);
+                    zoom:1;
+                    padding:0 20px 10px 20px;
+                    width:310px;
+                    .c-w-b-tt{
+                        overflow:hidden;
+                        width:310px;
+                        height:252px;
+                        line-height:25px;
+                        color:#939393;
+                    }
+                    .c-w-b-bb{
+                        width:310px;
+                        height:20px;
+                        .icon-a{
+                            background:url(/img/xiala.jpg);
+                            width:20px;
+                            height:20px;
+                            cursor:pointer;
+                            display:inline-block;
+                            vertical-align:middle;
+                            font-style:normal;
+                        }
+                    }
+                    .textright{
+                        text-align:right;
+                    }
+                }
+            }
+        }
+        .con-w-bottom{
+            background:#ec3970;
+            height:78px;
+            padding:15px 0 0 0;
+            ul{
+                margin:0 0 0 -45px;
+                vertical-align:middle;
+                li{
+                    float:left;
+                    color:white;
+                    font-size:16px;
+                    margin:0 0 0 70px;
+                    i{
+                        background:url(/img/dianzan.jpg);
+                        background-repeat:no-repeat;
+                        width:50px;
+                        height:50px;
+                        display:inline-block;
+                        vertical-align:middle;
+                    }
+                    span{
+                        display:inline-block;
+                        vertical-align:middle;
+                        em{
+                            display:block;
+                            font-weight:bold;
+                        }
+                    }
+                }
+                .con-w-b-2 i{
+                    background-position:-55px 0;
+                }
+                .con-w-b-3 i{
+                    background-position:-108px 0;
+                }
+                .con-w-b-4 i{
+                    background-position:-160px 0;
+                }
+            }
+            .cf{
+                zoom:1;
+            }
+        }
+        .bot{
+            margin:0 0 30px 0;
+        }
+        /*热销美妆*/
+        .con-hotCloth{
+            margin:0 0 20px 0;
+            height:40px;
+            line-height:40px;
+            color:#595959;
+            font-size:24px;
+            position:relative;
+            top:auto;
+            left:auto;
+            border-bottom:3px solid #595959;
+            b{
+                display:inline-block;
+                padding:0 15px;
+                font-weight:normal;
+                color:white;
+                height:40px;
+                line-height:40px;
+                background:#595959;
+                border-bottom:3px solid #ed1475;
+                i{
+                    background-position:-30px -2px;
+                    background-image:url(/img/hot-cloth.jpg);
+                    background-repeat:no-repeat;
+                    width:30px;
+                    height:30px;
+                    display:inline-block;
+                    vertical-align:middle;
+                }
+            }
+            s{
+               margin:0 0 0 10px;
+               font-style:normal;
+               text-decoration:none;
+            }
+        }
+        /*热销美妆详情*/
+        .con-hotDetail ul{
+            width:$width;
+            height:942px;
+            li{
+                width:337px;
+                height:441px;
+                float:left;
+                background:white;
+                padding:10px;
+                border:1px solid #e8e8e8;
+                //box-shadow:0 0 3px rgba(0,0,0,.5);
+                .hot-a-tt{
+                    width:315px;
+                    height:315px;
+                    position:relative;
+                    top:auto;
+                    left:auto;
+                    a{
+                        color:$color;
+                        img{
+                            width:314px;
+                            height:315px;
+                        }
+                    }
+                }
+                .hot-a-bb{
+                    font-size:14px;
+                    margin:15px 0;
+                    font-weight:bold;
+                    height:40px;
+                    a{
+                        color:$color;
+                    }
+                }
+                .hot-a-price{
+                    font-size:14px;
+                    .price{
+                        color:#ed145b;
+                        font-family:"微软雅黑";
+                        font-size:18px;
+                        em{
+                            font-size:30px;
+                            line-height:30px;
+                            padding:0 4px;
+                        }
+                    }
+                    del{
+                        font-size:16px;
+                        color:#999;
+                        padding-top:3px;
+                    }
+                    .btn-shop{
+                        width:100px;
+                        color:#fff;
+                        cursor:pointer;
+                        float:right;
+                        background:url(/img/line.png) repeat-x;
+                        border:1px solid #d90b0f;
+                        height:28px;
+                        line-height:26px;
+                        text-align:center;
+                        font-size:12px;
+                        display:line-block;
+                    }
+                }
+            }
+            li:nth-child(2){
+                margin:0 39px;
+            }
+            li:nth-child(4){
+                margin-top:32px;
+            }
+            li:nth-child(5){
+                margin:0 39px;
+                margin-top:32px;
+            }
+            li:nth-child(6){
+                margin-top:32px;
+            }
+        }
+        .cf{
+            zoom:1;
+        }
+        .con-hotDetail li:hover{
+            box-shadow:0 0 10px rgba(0,0,0,.5);
+        }
+        /*脸部护理*/
+        .face{
+            margin:0 0 20px 0;
+            height:40px;
+            line-height:40px;
+            color:#595959;
+            font-size:24px;
+            position:relative;
+            top:auto;
+            left:auto;
+            border-bottom:3px solid #595959;
+            b{
+                display:inline-block;
+                padding:0 15px;
+                font-weight:normal;
+                color:white;
+                height:40px;
+                line-height:40px;
+                background:#595959;
+                border-bottom:3px solid #ed1475;
+                i{
+                    background-position:-155px 1px;
+                    background-image:url(/img/hot-cloth.jpg);
+                    background-repeat:no-repeat;
+                    width:30px;
+                    height:30px;
+                    display:inline-block;
+                    vertical-align:middle;
+                }
+            }
+            s{
+               margin:0 0 0 10px;
+               font-style:normal;
+               text-decoration:none;
+            }
+        }
+        /*脸部护理详情*/
+        .face-detail ul{
+            width:$width;
+            height:942px;
+            li{
+                width:337px;
+                height:441px;
+                float:left;
+                background:white;
+                padding:10px;
+                border:1px solid #e8e8e8;
+                //box-shadow:0 0 3px rgba(0,0,0,.5);
+                .f-a-tt{
+                    width:315px;
+                    height:315px;
+                    position:relative;
+                    top:auto;
+                    left:auto;
+                    a{
+                        color:$color;
+                        img{
+                            width:314px;
+                            height:315px;
+                        }
+                    }
+                }
+                .f-a-bb{
+                    font-size:14px;
+                    margin:15px 0;
+                    font-weight:bold;
+                    height:40px;
+                    a{
+                        color:$color;
+                    }
+                }
+                .f-a-price{
+                    font-size:14px;
+                    .price{
+                        color:#ed145b;
+                        font-family:"微软雅黑";
+                        font-size:18px;
+                        em{
+                            font-size:30px;
+                            line-height:30px;
+                            padding:0 4px;
+                        }
+                    }
+                    del{
+                        font-size:16px;
+                        color:#999;
+                        padding-top:3px;
+                    }
+                    .btn-shop{
+                        width:100px;
+                        color:#fff;
+                        cursor:pointer;
+                        float:right;
+                        background:url(/img/line.png) repeat-x;
+                        border:1px solid #d90b0f;
+                        height:28px;
+                        line-height:26px;
+                        text-align:center;
+                        font-size:12px;
+                        display:line-block;
+                    }
+                }
+            }
+            li:nth-child(2){
+                margin:0 39px;
+            }
+            li:nth-child(4){
+                margin-top:32px;
+            }
+            li:nth-child(5){
+                margin:0 39px;
+                margin-top:32px;
+            }
+            li:nth-child(6){
+                margin-top:32px;
+            }
+        }
+        .cf{
+            zoom:1;
+        }
+        .face-detail li:hover{
+            box-shadow:0 0 10px rgba(0,0,0,.5);
+        }
+        /*身体护理*/
+        .bodies{
+            margin:0 0 20px 0;
+            height:40px;
+            line-height:40px;
+            color:#595959;
+            font-size:24px;
+            position:relative;
+            top:auto;
+            left:auto;
+            border-bottom:3px solid #595959;
+            b{
+                display:inline-block;
+                padding:0 15px;
+                font-weight:normal;
+                color:white;
+                height:40px;
+                line-height:40px;
+                background:#595959;
+                border-bottom:3px solid #ed1475;
+                i{
+                    background-position:-155px 1px;
+                    background-image:url(/img/hot-cloth.jpg);
+                    background-repeat:no-repeat;
+                    width:30px;
+                    height:30px;
+                    display:inline-block;
+                    vertical-align:middle;
+                }
+            }
+            s{
+               margin:0 0 0 10px;
+               font-style:normal;
+               text-decoration:none;
+            }
+        }
+        /*身体护理详情*/
+        .bodies-detail ul{
+            width:$width;
+            height:942px;
+            li{
+                width:337px;
+                height:441px;
+                float:left;
+                background:white;
+                padding:10px;
+                border:1px solid #e8e8e8;
+                //box-shadow:0 0 3px rgba(0,0,0,.5);
+                .bod-a-tt{
+                    width:315px;
+                    height:315px;
+                    position:relative;
+                    top:auto;
+                    left:auto;
+                    a{
+                        color:$color;
+                        img{
+                            width:314px;
+                            height:315px;
+                        }
+                    }
+                }
+                .bod-a-bb{
+                    font-size:14px;
+                    margin:15px 0;
+                    font-weight:bold;
+                    height:40px;
+                    a{
+                        color:$color;
+                    }
+                }
+                .bod-a-price{
+                    font-size:14px;
+                    .price{
+                        color:#ed145b;
+                        font-family:"微软雅黑";
+                        font-size:18px;
+                        em{
+                            font-size:30px;
+                            line-height:30px;
+                            padding:0 4px;
+                        }
+                    }
+                    del{
+                        font-size:16px;
+                        color:#999;
+                        padding-top:3px;
+                    }
+                    .btn-shop{
+                        width:100px;
+                        color:#fff;
+                        cursor:pointer;
+                        float:right;
+                        background:url(/img/line.png) repeat-x;
+                        border:1px solid #d90b0f;
+                        height:28px;
+                        line-height:26px;
+                        text-align:center;
+                        font-size:12px;
+                        display:line-block;
+                    }
+                }
+            }
+            li:nth-child(2){
+                margin:0 39px;
+            }
+            li:nth-child(4){
+                margin-top:32px;
+            }
+            li:nth-child(5){
+                margin:0 39px;
+                margin-top:32px;
+            }
+            li:nth-child(6){
+                margin-top:32px;
+            }
+        }
+        .cf{
+            zoom:1;
+        }
+        .bodies-detail li:hover{
+            box-shadow:0 0 10px rgba(0,0,0,.5);
+        }
+        /*眼部护理*/
+        .eyes{
+            margin:0 0 20px 0;
+            height:40px;
+            line-height:40px;
+            color:#595959;
+            font-size:24px;
+            position:relative;
+            top:auto;
+            left:auto;
+            border-bottom:3px solid #595959;
+            b{
+                display:inline-block;
+                padding:0 15px;
+                font-weight:normal;
+                color:white;
+                height:40px;
+                line-height:40px;
+                background:#595959;
+                border-bottom:3px solid #ed1475;
+                i{
+                    background-position:-155px 1px;
+                    background-image:url(/img/hot-cloth.jpg);
+                    background-repeat:no-repeat;
+                    width:30px;
+                    height:30px;
+                    display:inline-block;
+                    vertical-align:middle;
+                }
+            }
+            s{
+               margin:0 0 0 10px;
+               font-style:normal;
+               text-decoration:none;
+            }
+        }
+        /*眼部护理详情*/
+        .eyes-detail ul{
+            width:$width;
+            height:942px;
+            li{
+                width:337px;
+                height:441px;
+                float:left;
+                background:white;
+                padding:10px;
+                border:1px solid #e8e8e8;
+                //box-shadow:0 0 3px rgba(0,0,0,.5);
+                .eyes-a-tt{
+                    width:315px;
+                    height:315px;
+                    position:relative;
+                    top:auto;
+                    left:auto;
+                    a{
+                        color:$color;
+                        img{
+                            width:314px;
+                            height:315px;
+                        }
+                    }
+                }
+                .eyes-a-bb{
+                    font-size:14px;
+                    margin:15px 0;
+                    font-weight:bold;
+                    height:40px;
+                    a{
+                        color:$color;
+                    }
+                }
+                .eyes-a-price{
+                    font-size:14px;
+                    .price{
+                        color:#ed145b;
+                        font-family:"微软雅黑";
+                        font-size:18px;
+                        em{
+                            font-size:30px;
+                            line-height:30px;
+                            padding:0 4px;
+                        }
+                    }
+                    del{
+                        font-size:16px;
+                        color:#999;
+                        padding-top:3px;
+                    }
+                    .btn-shop{
+                        width:100px;
+                        color:#fff;
+                        cursor:pointer;
+                        float:right;
+                        background:url(/img/line.png) repeat-x;
+                        border:1px solid #d90b0f;
+                        height:28px;
+                        line-height:26px;
+                        text-align:center;
+                        font-size:12px;
+                        display:line-block;
+                    }
+                }
+            }
+            li:nth-child(2){
+                margin:0 39px;
+            }
+            li:nth-child(4){
+                margin-top:32px;
+            }
+            li:nth-child(5){
+                margin:0 39px;
+                margin-top:32px;
+            }
+            li:nth-child(6){
+                margin-top:32px;
+            }
+        }
+        .cf{
+            zoom:1;
+        }
+        .eyes-detail li:hover{
+            box-shadow:0 0 10px rgba(0,0,0,.5);
+        }
+        /*头部护理*/
+        .tip{
+            margin:0 0 20px 0;
+            height:40px;
+            line-height:40px;
+            color:#595959;
+            font-size:24px;
+            position:relative;
+            top:auto;
+            left:auto;
+            border-bottom:3px solid #595959;
+            b{
+                display:inline-block;
+                padding:0 15px;
+                font-weight:normal;
+                color:white;
+                height:40px;
+                line-height:40px;
+                background:#595959;
+                border-bottom:3px solid #ed1475;
+                i{
+                    background-position:-155px 1px;
+                    background-image:url(/img/hot-cloth.jpg);
+                    background-repeat:no-repeat;
+                    width:30px;
+                    height:30px;
+                    display:inline-block;
+                    vertical-align:middle;
+                }
+            }
+            s{
+               margin:0 0 0 10px;
+               font-style:normal;
+               text-decoration:none;
+            }
+        }
+        /*头部护理详情*/
+        .tip-detail ul{
+            width:$width;
+            height:942px;
+            li{
+                width:337px;
+                height:441px;
+                float:left;
+                background:white;
+                padding:10px;
+                border:1px solid #e8e8e8;
+                //box-shadow:0 0 3px rgba(0,0,0,.5);
+                .tip-a-tt{
+                    width:315px;
+                    height:315px;
+                    position:relative;
+                    top:auto;
+                    left:auto;
+                    a{
+                        color:$color;
+                        img{
+                            width:314px;
+                            height:315px;
+                        }
+                    }
+                }
+                .tip-a-bb{
+                    font-size:14px;
+                    margin:15px 0;
+                    font-weight:bold;
+                    height:40px;
+                    a{
+                        color:$color;
+                    }
+                }
+                .tip-a-price{
+                    font-size:14px;
+                    .price{
+                        color:#ed145b;
+                        font-family:"微软雅黑";
+                        font-size:18px;
+                        em{
+                            font-size:30px;
+                            line-height:30px;
+                            padding:0 4px;
+                        }
+                    }
+                    del{
+                        font-size:16px;
+                        color:#999;
+                        padding-top:3px;
+                    }
+                    .btn-shop{
+                        width:100px;
+                        color:#fff;
+                        cursor:pointer;
+                        float:right;
+                        background:url(/img/line.png) repeat-x;
+                        border:1px solid #d90b0f;
+                        height:28px;
+                        line-height:26px;
+                        text-align:center;
+                        font-size:12px;
+                        display:line-block;
+                    }
+                }
+            }
+            li:nth-child(2){
+                margin:0 39px;
+            }
+            li:nth-child(4){
+                margin-top:32px;
+            }
+            li:nth-child(5){
+                margin:0 39px;
+                margin-top:32px;
+            }
+            li:nth-child(6){
+                margin-top:32px;
+            }
+        }
+        .cf{
+            zoom:1;
+        }
+        .tip-detail li:hover{
+            box-shadow:0 0 10px rgba(0,0,0,.5);
+        }
+        /*脚部保养*/
+        .fot{
+            margin:0 0 20px 0;
+            height:40px;
+            line-height:40px;
+            color:#595959;
+            font-size:24px;
+            position:relative;
+            top:auto;
+            left:auto;
+            border-bottom:3px solid #595959;
+            b{
+                display:inline-block;
+                padding:0 15px;
+                font-weight:normal;
+                color:white;
+                height:40px;
+                line-height:40px;
+                background:#595959;
+                border-bottom:3px solid #ed1475;
+                i{
+                    background-position:-155px 1px;
+                    background-image:url(/img/hot-cloth.jpg);
+                    background-repeat:no-repeat;
+                    width:30px;
+                    height:30px;
+                    display:inline-block;
+                    vertical-align:middle;
+                }
+            }
+            s{
+               margin:0 0 0 10px;
+               font-style:normal;
+               text-decoration:none;
+            }
+        }
+        /*脚部保养详情*/
+        .fot-detail ul{
+            width:$width;
+            height:942px;
+            li{
+                width:337px;
+                height:441px;
+                float:left;
+                background:white;
+                padding:10px;
+                border:1px solid #e8e8e8;
+                //box-shadow:0 0 3px rgba(0,0,0,.5);
+                .fot-a-tt{
+                    width:315px;
+                    height:315px;
+                    position:relative;
+                    top:auto;
+                    left:auto;
+                    a{
+                        color:$color;
+                        img{
+                            width:314px;
+                            height:315px;
+                        }
+                    }
+                }
+                .fot-a-bb{
+                    font-size:14px;
+                    margin:15px 0;
+                    font-weight:bold;
+                    height:40px;
+                    a{
+                        color:$color;
+                    }
+                }
+                .fot-a-price{
+                    font-size:14px;
+                    .price{
+                        color:#ed145b;
+                        font-family:"微软雅黑";
+                        font-size:18px;
+                        em{
+                            font-size:30px;
+                            line-height:30px;
+                            padding:0 4px;
+                        }
+                    }
+                    del{
+                        font-size:16px;
+                        color:#999;
+                        padding-top:3px;
+                    }
+                    .btn-shop{
+                        width:100px;
+                        color:#fff;
+                        cursor:pointer;
+                        float:right;
+                        background:url(/img/line.png) repeat-x;
+                        border:1px solid #d90b0f;
+                        height:28px;
+                        line-height:26px;
+                        text-align:center;
+                        font-size:12px;
+                        display:line-block;
+                    }
+                }
+            }
+            li:nth-child(2){
+                margin:0 39px;
+            }
+            li:nth-child(4){
+                margin-top:32px;
+            }
+            li:nth-child(5){
+                margin:0 39px;
+                margin-top:32px;
+            }
+            li:nth-child(6){
+                margin-top:32px;
+            }
+        }
+        .cf{
+            zoom:1;
+        }
+        .fot-detail li:hover{
+            box-shadow:0 0 10px rgba(0,0,0,.5);
+        }
+
+        /*相关专题*/
+        .related{
+            margin:0 0 20px 0;
+            height:40px;
+            line-height:40px;
+            color:#595959;
+            font-size:24px;
+            position:relative;
+            top:auto;
+            left:auto;
+            border-bottom:3px solid #595959;
+            b{
+                display:inline-block;
+                padding:0 15px;
+                font-weight:normal;
+                color:white;
+                height:40px;
+                line-height:40px;
+                background:#595959;
+                border-bottom:3px solid #ed1475;
+                i{
+                    background-position:-155px 1px;
+                    background-image:url(/img/hot-cloth.jpg);
+                    background-repeat:no-repeat;
+                    width:30px;
+                    height:30px;
+                    display:inline-block;
+                    vertical-align:middle;
+                }
+            }
+            s{
+               margin:0 0 0 10px;
+               font-style:normal;
+               text-decoration:none;
+            }
+        }
+        /*相关专题详情*/
+        .rel-detail{
+            width:$width;
+            height:440px;
+            padding:20px;
+            background:#fff;
+            .rel-lt{
+                width:340px;
+                height:400px;
+                overflow:hidden;
+                float:left;
+                a{
+                    color:#969696;
+                    img{
+                        width:340px;
+                        height:400px;
+                    }
+                }
+            }
+            .relative{
+                position:relative;
+                top:auto;
+                left:auto;
+            }
+            .rel-rt{
+                width:696px;
+                overflow:hidden;
+                float:right;
+                .rel-rt-1{
+                    a{
+                        color:#969696;
+                        img{
+                            width:696px;
+                            height:196px;
+                            border:none;
+                            vertical-align:middle;
+                        }
+                    }
+                }
+                .relative{
+                    position:relative;
+                    top:auto;
+                    left:auto;
+                }
+                .rel-rt-2{
+                    margin:13px 0 0 0;
+                    .rel-rt-2-ll{
+                        width:340px;
+                        float:left;
+                        .relative{
+                            position:relative;
+                            top:auto;
+                            left:auto;
+                            a{
+                                color:#969696;
+                                img{
+                                    width:340px;
+                                    height:188px;
+                                    border:none;
+                                    vertical-align:middle;
+                                }
+                            }
+                        }
+                    }
+                    .rel-rt-2-rr{
+                        width:340px;
+                        float:right;
+                        .relative{
+                            position:relative;
+                            top:auto;
+                            left:auto;
+                            a{
+                                color:#969696;
+                                img{
+                                    width:340px;
+                                    height:188px;
+                                    border:none;
+                                    vertical-align:middle;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .mb30{
+            margin:0 0 30px 0;
+        }
+        /*用户评价*/
+        .user{
+            width:1090px;
+            height:564px;
+            box-shadow:0 0 3px rgba(0,0,0,.5);
+            padding:20px 20px 20px 20px;
+            //border:1px solid #ddd;
+            background:#fff;
+            /*左边*/
+            .user-left{
+                width:700px;
+                height:504px;
+                //background:pink;
+                float:left;
+                /*左上*/
+                .user-l-top{
+                    width:700px;
+                    height:178px;
+                    //background:gray;
+                    margin-bottom: 30px;
+                    /*左上tt*/
+                    .user-l-top-tt{
+                        width:700px;
+                        height:36px;
+                       //background:#f90;
+                        b{
+                            float:left;
+                            color:#676c68;
+                            font-size:24px;
+                        }
+                        a{
+                            float:right;
+                            color:#ed145b;
+                            margin-top:10px;
+                        }
+                    }
+                    /*左上bb*/
+                    .user-l-top-bb{
+                        width:700px;
+                        height:122px;
+                        //border:1px solid red;
+                        padding:10px;
+                        .bb-produrts{
+                            width:680px;
+                            height:102px;
+                            //background:plum;
+                            li{
+                                width:300px;
+                                height:80px;
+                                margin:0 20px 0 20px;
+                                line-height:24px;
+                                text-align:left;
+                                float:left;
+                                margin-top:7px;
+                                dl{
+                                    width:300px;
+                                    height:80px;
+                                    dt{
+                                        width:80px;
+                                        height:80px;
+                                        float:left;
+                                        img{
+                                            width:80px;
+                                            height:80px;
+                                            border:none;
+                                        }
+                                    }
+                                    dd{
+                                        width:200px;
+                                        height:60px;
+                                        float:right;
+                                        p{
+                                            color:#9c9d9f;
+                                        }
+                                        span{
+                                            color:#666666;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                /*左下*/
+                .user-l-bottom{
+                    width:700px;
+                    height:296px;
+                    //border:1px solid red;
+                    /*左下tt*/
+                    .user-l-bottom-tt{
+                        width:700px;
+                        height:36px;
+                        //background:pink;
+                        b{
+                            float:left;
+                            color:#676c68;
+                            font-size:24px;
+                        }
+                        a{
+                            float:right;
+                            color:#ed145b;
+                            margin-top:10px;
+                        }
+                    }
+                    /*左下bb*/
+                    .user-l-bottom-bb{
+                        width:700px;
+                        height:240px;
+                        //background:skyblue;
+                        .bb-left{
+                            width:390px;
+                            height:230px;
+                            //background:plum;
+                            float:left;
+                            position:relative;
+                            img{
+                                width:100%;
+                                height:100%;
+                            }
+                            .bb-l-word{
+                                width:100%;
+                                height:50px;
+                                line-height:50px;
+                                font-size:18px;
+                                text-indent:10px;
+                                position:absolute;
+                                top:180px;
+                                left:0px;
+                                background:rgba(0,0,0,.7);
+                                a{
+                                    color:rgba(255,255,255,.8);
+                                }
+                            }
+                        }
+                        .bb-right{
+                            width:290px;
+                            height:240px;
+                            //background:yellow;
+                            float:right;
+                            ul{
+                                width:290px;
+                                height:240px;
+                                li{
+                                    width:290px;
+                                    height:18px;
+                                    margin:0 0 12px 0;
+                                    list-style:inside circle;
+                                    color:#ed145b;
+                                    span{
+                                        color:#979797;
+                                    }
+                                    span:hover{
+                                        color:#ed145b;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            /*右边*/
+            .user-right{
+                width:300px;
+                height:522px;
+                /*background:yellow;*/
+                float:right;
+                /*右上*/
+                .user-r-top{
+                    width:300px;
+                    height:36px;
+                    /*background:pink;*/
+                    margin-bottom:20px;
+                     b{
+                        float:left;
+                        color:#676c68;
+                        font-size:24px;
+                    }
+                     a{
+                        float:right;
+                        color:#ed145b;
+                        margin-top:10px;
+                     }
+                }
+                /*右下*/
+                .user-r-bottom{
+                    width:300px;
+                    height:466px;
+                    /*background:#f90;*/
+                    .user-r-over{
+                        width:300px;
+                        height:466px;
+                        /*border:1px solid red;*/
+                        /*overflow:hidden;*/
+                        ul{
+                            width:300px;
+                            height:466px;
+                            li:first-child{
+                                width:300px;
+                                height:156px;
+                                /*background:plum;*/
+                                margin:0 0 20px 0;
+                                padding:0 0 20px 0;
+                                border-bottom:1px dashed #ddd;
+                                .over-q-1{
+                                    width:300px;
+                                    height:45px;
+                                    margin:0 0 8px 0;
+                                    .q-1-left{
+                                        width:25px;
+                                        height:25px;
+                                        margin-top:5px;
+                                        text-align:center;
+                                        line-height:25px;
+                                        font-size:16px;
+                                        color:white;
+                                        background:#ec3970;
+                                        float:left;
+                                    }
+                                    .q-1-right{
+                                        width:260px;
+                                        height:45px;
+                                        float:right;
+                                        h2{
+                                            font-weight:bold;
+                                            font-size:12px;
+                                            a{
+                                                color:#555;
+                                            }
+                                        }
+                                        p{
+                                            margin-top:2px;
+                                            color:#646464;
+                                            a{
+                                                color:#ec3970;
+                                                padding:0 4px;
+                                                font-weight:bold;
+                                                font-size:18px;
+                                                position:relative;
+                                                top:2px;
+                                                cursor:pointer;
+                                            }
+                                        }
+                                    }
+                                }
+                                .over-a-1{
+                                    width:300px;
+                                    height:88px;
+                                    line-height:22px;
+                                    .a-1-left{
+                                        width:25px;
+                                        height:25px;
+                                        margin-top:5px;
+                                        text-align:center;
+                                        line-height:25px;
+                                        font-size:16px;
+                                        color:white;
+                                        background:#09bba3;
+                                        float:left;
+                                    }
+                                    .a-1-right{
+                                        width:260px;
+                                        height:88px;
+                                        color:#555;
+                                        float:right;
+                                    }
+                                }
+                            }
+                            li:nth-child(2){
+                                width:300px;
+                                height:156px;
+                                /*background:plum;*/
+                                margin:0 0 20px 0;
+                                padding:0 0 20px 0;
+                                border-bottom:1px dashed #ddd;
+                                .over-q-2{
+                                    width:300px;
+                                    height:45px;
+                                    margin:0 0 8px 0;
+                                    .q-2-left{
+                                        width:25px;
+                                        height:25px;
+                                        margin-top:5px;
+                                        text-align:center;
+                                        line-height:25px;
+                                        font-size:16px;
+                                        color:white;
+                                        background:#ec3970;
+                                        float:left;
+                                    }
+                                    .q-2-right{
+                                        width:260px;
+                                        height:45px;
+                                        float:right;
+                                        h2{
+                                            font-weight:bold;
+                                            font-size:12px;
+                                            a{
+                                                color:#555;
+                                            }
+                                        }
+                                        p{
+                                            margin-top:2px;
+                                            color:#646464;
+                                            a{
+                                                color:#ec3970;
+                                                padding:0 4px;
+                                                font-weight:bold;
+                                                font-size:18px;
+                                                position:relative;
+                                                top:2px;
+                                                cursor:pointer;
+                                            }
+                                        }
+                                    }
+                                }
+                                .over-a-2{
+                                    width:300px;
+                                    height:88px;
+                                    line-height:22px;
+                                    .a-2-left{
+                                        width:25px;
+                                        height:25px;
+                                        margin-top:5px;
+                                        text-align:center;
+                                        line-height:25px;
+                                        font-size:16px;
+                                        color:white;
+                                        background:#09bba3;
+                                        float:left;
+                                    }
+                                    .a-2-right{
+                                        width:260px;
+                                        height:88px;
+                                        color:#555;
+                                        float:right;
+                                    }
+                                }
+                            }
+                            li:nth-child(3){
+                                width:300px;
+                                height:156px;
+                                /*background:plum;*/
+                                margin:0 0 20px 0;
+                                padding:0 0 20px 0;
+                                border-bottom:1px dashed #ddd;
+                                .over-q-3{
+                                    width:300px;
+                                    height:45px;
+                                    margin:0 0 8px 0;
+                                    .q-3-left{
+                                        width:25px;
+                                        height:25px;
+                                        margin-top:5px;
+                                        text-align:center;
+                                        line-height:25px;
+                                        font-size:16px;
+                                        color:white;
+                                        background:#ec3970;
+                                        float:left;
+                                    }
+                                    .q-3-right{
+                                        width:260px;
+                                        height:45px;
+                                        float:right;
+                                        h2{
+                                            font-weight:bold;
+                                            font-size:12px;
+                                            a{
+                                                color:#555;
+                                            }
+                                        }
+                                        p{
+                                            margin-top:2px;
+                                            color:#646464;
+                                            a{
+                                                color:#ec3970;
+                                                padding:0 4px;
+                                                font-weight:bold;
+                                                font-size:18px;
+                                                position:relative;
+                                                top:2px;
+                                                cursor:pointer;
+                                            }
+                                        }
+                                    }
+                                }
+                                .over-a-3{
+                                    width:300px;
+                                    height:88px;
+                                    line-height:22px;
+                                    .a-3-left{
+                                        width:25px;
+                                        height:25px;
+                                        margin-top:5px;
+                                        text-align:center;
+                                        line-height:25px;
+                                        font-size:16px;
+                                        color:white;
+                                        background:#09bba3;
+                                        float:left;
+                                    }
+                                    .a-3-right{
+                                        width:260px;
+                                        height:88px;
+                                        color:#555;
+                                        float:right;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+         }
+         /*护肤百科*/
+         .skin{
+            width:1090px;
+            height:43px;
+            margin:30px 0 20px 0;
+            line-height:40px;
+            color:#595959;
+            font-size:24px;
+            position:relative;
+            top:auto;
+            left:auto;
+            border-bottom:3px solid #595959;
+            b{
+                display:inline-block;
+                padding:0 15px;
+                font-weight:normal;
+                color:white;
+                height:40px;
+                line-height:40px;
+                background:#595959;
+                border-bottom:3px solid #ed1475;
+                i{
+                    background-position:-155px 1px;
+                    background-image:url(/img/hot-cloth.jpg);
+                    background-repeat:no-repeat;
+                    width:30px;
+                    height:30px;
+                    display:inline-block;
+                    vertical-align:middle;
+                }
+            }
+            s{
+               margin:0 0 0 10px;
+               font-style:normal;
+               text-decoration:none;
+            }
+            a{
+                float:right;
+                color:#ed145b;
+                font-size:12px;
+            }
+        }
+        .skin-detail{
+            width:1090px;
+            height:229px;
+            background:#fff;
+            padding:0 15px;
+            margin-bottom:20px;
+            .skin-d-top{
+                width:1060px;
+                height:89px;
+                a{
+                    width:118px;
+                    height:72px;
+                    float:left;
+                    margin:0 12.5px 15px 0;
+                    border:1px solid #eee;
+                    img{
+                        width:100%;
+                        height:100%;
+                        border:none;
+                    }
+                }
+            }
+            .skin-d-bottom{
+                width:1060px;
+                height:110px;
+                padding-left:1px;
+                a{
+                    width:60px;
+                    height:18px;
+                    display:inline-block;
+                    margin:0 10px 0 0;
+                    white-space:nowrap;
+                    text-overflow:ellipsis;
+                    color:#969696;
+                    overflow:hidden;
+                }
+                a:hover{
+                    color:#ed1475;
+                }
+            }
+        }
+        /*美妆相册*/
+        .beauty{
+            width:1090px;
+            height:43px;
+            margin:30px 0 20px 0;
+            line-height:40px;
+            color:#595959;
+            font-size:24px;
+            position:relative;
+            top:auto;
+            left:auto;
+            border-bottom:3px solid #595959;
+            b{
+                display:inline-block;
+                padding:0 15px;
+                font-weight:normal;
+                color:white;
+                height:40px;
+                line-height:40px;
+                background:#595959;
+                border-bottom:3px solid #ed1475;
+                i{
+                    background-position:-155px 1px;
+                    background-image:url(/img/hot-cloth.jpg);
+                    background-repeat:no-repeat;
+                    width:30px;
+                    height:30px;
+                    display:inline-block;
+                    vertical-align:middle;
+                }
+            }
+            s{
+               margin:0 0 0 10px;
+               font-style:normal;
+               text-decoration:none;
+            }
+            a{
+                float:right;
+                color:#ed145b;
+                font-size:12px;
+            }
+        }
+        /*美妆相册详情*/
+        .beauty-detail{
+            width:1090px;
+            height:299px;
+            margin:0 0 30px 0;
+            ul{
+                width:1100px;
+                height:299px;
+                margin:0 0 0 -20px;
+                li{
+                    border:1px solid #f5f5f5;
+                    margin:0 0 0 20px;
+                    float:left;
+                    width:255px;
+                    height:297px;
+                    position:relative;
+                    top:auto;
+                    left:auto;
+                    a{ 
+                        display:block;
+                        width:255px;
+                        height:297px;
+                        text-align:center;
+                        overflow:hidden;
+                        img{
+                            width:98%;
+                            height:295px;
+                            margin:0 auto;
+                        }
+                    }
+                    p{
+                        width:255px;
+                        height:50px;
+                        background:rgba(0,0,0,.7);
+                        position:absolute;
+                        bottom:0;
+                        left:0;
+                        font-size:24px;
+                        line-height:50px;
+                        text-align:center;
+                        z-index:1;
+                        a{
+                            color:#fff;
+                        }
+                    }
+                }
+                li:hover{
+                    border:1px solid #f12a68;
+                }
+                li:hover p{
+                    background:#f12a68;
+                }
+            }
+        }
+        /*入驻品牌*/
+        .brand{
+            width:$width;
+            height:406px;
+            background:#fff;
+            padding:15px;
+            border:1px solid #ddd;
+            box-shadow:0 0 3px rgba(0,0,0,0.5);
+            p:first-child{
+                width:146px;
+                height:36px;
+                font-size:24px;
+                margin:0 0 20px 0;
+                color:#ed145b;
+                border-bottom:2px solid #ed145b;
+            }
+            .brand_detail{
+                width:1058px;
+                height:318px;
+                //background:pink;
+                .brand_list{
+                    width:1058px;
+                    height:178px;
+                    //background:yellow;
+                    a{
+                        width:116px;
+                        height:72px;
+                        float:left;
+                        margin:0 14px 15px 0;
+                        border:1px solid #eee;
+                        color:#969696;
+                        overflow:hidden;
+                        img{
+                            width:100%;
+                            height:100%;
+                            border:none;
+                            vertical-align:middle;
+                        }
+                    }
+                }
+            }
+            p:nth-child(2){
+                width:1058px;
+                height:140px;
+                line-height:22px;
+                a{
+                    display:inline-block;
+                    width:60px;
+                    margin-right:10px;
+                    white-space:nowrap;
+                    text-overflow:ellipsis;
+                    color:#969696;
+                }
+                a:hover{
+                    color:#ed145b;
+                }
+            }
+        }
+        /*友情链接*/
+        .friends{
+            width:$width;
+            height:117px;
+            padding:15px;
+            border:1px solid #ddd;
+            box-shadow:0 0 3px rgba(0,0,0,0.5);
+            background:#fff;
+            margin-top:30px;
+            ul{
+                width:1078px;
+                height:37px;
+                font-size:24px;
+                margin:0 0 20px -20px;
+                li{
+                    float:left;
+                    padding:0 20px;
+                }
+                li:first-child{
+                    border-right:1px solid #ccc;
+                    a{
+                        color:#ed145b;
+                        border-bottom:2px solid #ed145b;
+                        padding:5px 0 5px;
+                    }
+                }
+                li:nth-child(2) a{
+                    color:#969696;
+                }
+                li:nth-child(2):hover a{
+                    color:#ed145b;
+                    border-bottom:2px solid #ed145b;
+                    padding:5px 0 5px;
+                }
+                li:nth-child(3){
+                    width:658px;
+                    float:left;
+                    margin-left:-21px;
+                    margin-top:-6px;
+                    b{
+                        font-size:14px;
+                        padding-top:16px;
+                        float:left;
+                        color:#969696;
+                    }
+                    a{
+                        float:left;
+                        color:#3586BC;
+                        padding:17px 2px 0 4px;
+                        font-size:14px;
+                    }
+                    a:hover{
+                        color:#ed145b;
+                    }
+                }
+            }
+            .friends-bottom{
+                width:1058px;
+                height:84px;
+                a{
+                    display:inline-block;
+                    width:60px;
+                    overflow:hidden;
+                    margin:0 10px 0 0;
+                    white-space:nowrap;
+                    text-overflow:ellipsis;
+                    color:#969696;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,131 @@
+$width:1090px;
+.box{
+    width:$width;
+    height:767px;
+    margin:0 auto;
+    /*第一部分*/
+    .head-login{
+        width:1060px;
+        height:185px;
+        padding:50px 0;
+        .head-login-left{
+            font-size:24px;
+            color:#626262;
+            float:left;
+            a{
+                color:#969696;
+                img{
+                    width:291px;
+                    height:85px;
+                    padding:0 10px 0 0;
+                    margin:0 10px 0 0;
+                    border-right:1px solid #d2d0d3;
+                    vertical-align:middle;
+                }
+            }
+        }
+        .head-login-right{
+            float:right;
+            padding:20px 0 0 0;
+            i{
+                width:32px;
+                height:32px;
+                margin:0 5px 0 36px;
+                background:url(/img/register-bg.jpg) no-repeat;
+                display:inline-block;
+                vertical-align: middle;
+            }
+            i:nth-child(2){
+                background-position:-32px 0;
+            }
+            i:nth-child(3){
+                background-position:-65px 0;
+            }
+            .rr-1,.rr-2,.rr-3{
+                color:#626262;
+            }
+        }
+    }
+    /*第二部分*/
+    .box-login{
+        width:$width;
+        height:472px;
+        .box-login-left{
+            width:545px;
+            height:450px;
+            float:left;
+            a{
+                color:#969696;
+                img{
+                    width:545px;
+                    height:450px;
+                    border:none;
+                    vertical-align:middle;
+                }
+            }
+        }
+        .box-login-right{
+            width:477px;
+            height:450px;
+            padding:60px 60px 40px 60px;
+            margin:0 30px 0 0;
+            border:1px solid #cacaca;
+            float:right;
+            p{
+                margin:0 0 20px 0;
+                display:block;
+                position:relative;
+                top:auto;
+                left:auto;
+                z-index:1;
+                label{
+                        display:block;
+                        font-size: 14px;
+                        height: 30px;
+                        position: absolute;
+                        top: 1px;
+                        width: 100%;
+                        cursor: text;
+                        color: #aaa;
+                        z-index: 0;
+                }
+                input{
+                        width:375px;
+                        height:40px;
+                        border: 1px solid #cfcfd1;
+                }
+            }
+            .btn-reg{
+                width:140px;
+                height:40px;
+                background:#ed1475;
+                cursor:pointer;
+                border:none;
+                color:white;
+                text-align:cener;
+                vertical-align:middle;
+                font-size:16px;
+            }
+        }
+    }
+    /*第三部分*/
+    .foot-login{
+        width:$width;
+        height:50px;
+        text-align:center;
+        margin:60px auto;
+        line-height:25px;
+        p{
+            width:$width;
+            height:25px;
+            color:#969696;
+        }
+        .foot-login-a a{
+            margin:0 10px;
+            color:#969696;
+        }
+        p:last-child{
+            color:gray;
+        }
+    }
+}

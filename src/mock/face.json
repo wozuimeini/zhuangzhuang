@@ -1,0 +1,15 @@
+{
+    "res_code":0,
+    "res_error":"",
+    "res_body": {
+        "list" :[               
+                {"id":1, "img":"/img/face-1.jpg", "desc":"freezeframe祛斑霜", "price":"295", "delprice":"295"},
+                {"id":2, "img":"/img/face-2.jpg", "desc":"freezeframe祛斑霜", "price":"295", "delprice":"295"},
+                {"id":3, "img":"/img/face-3.jpg", "desc":"freezeframe祛斑霜", "price":"295", "delprice":"295"},
+                {"id":4, "img":"/img/face-4.jpg", "desc":"freezeframe祛斑霜", "price":"295", "delprice":"295"},
+                {"id":5, "img":"/img/face-5.jpg", "desc":"freezeframe祛斑霜", "price":"295", "delprice":"295"},
+                {"id":6, "img":"/img/face-6.jpg", "desc":"freezeframe祛斑霜", "price":"295", "delprice":"295"}
+               ]
+
+    }
+}
