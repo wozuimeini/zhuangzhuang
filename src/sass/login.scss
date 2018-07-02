@@ -95,15 +95,16 @@ $width:1090px;
                         border: 1px solid #cfcfd1;
                 }
             }
-            .btn-reg{
+            #btn-reg{
                 width:140px;
                 height:40px;
+                display:block;
                 background:#ed1475;
                 cursor:pointer;
                 border:none;
                 color:white;
-                text-align:cener;
-                vertical-align:middle;
+                text-align:center;
+                line-height:40px;
                 font-size:16px;
             }
         }

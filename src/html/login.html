@@ -30,12 +30,13 @@
                 </a>
             </div>
             <div class="box-login-right">
+                <form id="login_form">
                 <p>
                     <span style="font-size: 14px;font-weight: normal;
                     color: #333;position: relative;margin-bottom:7px;
     display: block;">账号</span>
                     <label for="userName" id="userName_Text" ></label>
-                    <input type="text" placeholder="&nbsp;请输入您的用户名" id="userName" class="form-text" maxlength="11">
+                    <input type="text" placeholder="&nbsp;请输入您的用户名" id="userName" name="userName" class="form-text" maxlength="11">
                 </p>
                 <p>
                     <span style="font-size: 14px;font-weight: normal;
@@ -44,13 +45,14 @@
                     <span style="font-size: 14px;font-weight: normal;float:right;
                     color: #999;position: relative;top:-7px;left:0px;">忘记密码？</span>
                     <label for="passWord" id="password_Text" ></label>
-                    <input type="password" placeholder="&nbsp;请输入密码" id="passWord" class="form-text" maxlength="11">
+                    <input type="password" placeholder="&nbsp;请输入密码" id="passWord" name="passWord" class="form-text" maxlength="11">
                 </p>
                 <p>
-                    <input type="button" class="btn-reg" value="立即注册">
+                    <a type="button" id="btn-reg">登录</a>
                     <a href="/html/register.html" style="display:block;position:absolute;top:9px;right:-12px;
                     font-size: 14px;color: #ed1475;">30秒立即注册>></a>
                 </p>
+            </form>
             </div>
         </div>
         <!--第三部分-->
@@ -74,5 +76,6 @@
             </p>
         </div>
     </div>
+     <script src="/lib/requirejs/require.js" data-main="/js/login"></script>
 </body>
 </html>

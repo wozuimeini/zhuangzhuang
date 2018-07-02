@@ -30,33 +30,49 @@
                 </a>
             </div>
             <div class="box-login-right">
+                <div class="message">请输入至少四位的用户名</div>
+                <div class="message_2">请输入6~20位的密码</div>
+                <div class="message_3">两次密码输入不一致，请重新输入</div>
+                 <form id="register_form">
                 <p class="reg-a">
                     <a href="/html/login.html">登录>></a>
                 </p>
+               
+
                 <p>
-                    <label for="userName" id="userName_Text" >请输入用户名</label>
-                    <input type="text" id="userName" class="form-text" maxlength="11">
+                    <label for="userName" id="userName_Text" ></label>
+                    <input type="text" id="userName" name ="userName" class="form-text" maxlength="11" placeholder="请输入用户名">
                 </p>
                 <p>
-                    <label for="passWord" id="password_Text" >请输入密码</label>
-                    <input type="password" id="passWord" class="form-text" maxlength="11">
+                    <label for="passWord" id="password_Text" ></label>
+                    <input type="password" id="passWord" name="passWord" class="form-text" maxlength="11" placeholder="请输入密码">
                 </p>
                 <p>
-                    <label for="Repassword" id="Repassword_Text" >请再次输入密码</label>
-                    <input type="password" id="Repassword" class="form-text" maxlength="11">
+                    <label for="Repassword" id="Repassword_Text" ></label>
+                    <input type="password" id="Repassword" class="form-text" maxlength="11" placeholder="请再次输入密码">
                 </p>
-                <p id="yanzheng">
+                <div id="yanzheng">
                     <div class="gt_holder">
                         <div class="gt_slider">
+                            <div class="circle">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="slide">按住左边滑块，拖动完成上方拼图</div>
                         </div>
                         <i class="iconfont icon-chupiaosuoding" 
-                        style="display:block;font-size:20px;color:#4dbcff;"></i>
+                        style="display:block;margin-top:-21px;
+                        font-size:20px;color:#4dbcff;float:right;margin-right:-68px;"></i>
                     </div>
-                </p>
+                </div>
                 <p>
-                    <input type="button" class="btn-reg" value="立即注册">
+                    <a href="javascript:void(0);" id="btn-reg">立即注册</a>
+                    <!---<input type="button" class="btn-reg"  value="立即注册">-->
                 </p>
+            
             </div>
+              </form>
         </div>
         <!--第三部分-->
         <div class="foot-login">
@@ -79,5 +95,6 @@
             </p>
         </div>
     </div>
+     <script src="/lib/requirejs/require.js" data-main="/js/register"></script>
 </body>
 </html>
