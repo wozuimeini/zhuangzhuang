@@ -1,8 +1,9 @@
 require (["config"],function(){
 	require(["jquery","cookie"],function($){
 		$(function (){
-			 $("#userName").on("blur", function () {
-            if (this.value==="") {
+			$("#userName").on("blur", function () {
+            const username_val = $(this).val();
+            if (this.value==="" || !/^.[a-zA-Z0-9_-]{3,}$/.test(username_val)) {
             	$(this).val("");
                 $(".message").show();
             }
@@ -11,12 +12,13 @@ require (["config"],function(){
             }
         });
 		$("#passWord").on("blur", function () {
-			if (this.value==="") {
+			const password_val = $(this).val();
+            if (password_val==="" || !/^.{6,20}$/.test(password_val)) {
 				$(this).val("");
-				 $(".message").show();
+				 $(".message_2").show();
 			}
 			else{
-				  $(".message").hide();
+				  $(".message_2").hide();
 			}
 		});
 		$("#btn-reg").on("click",function(){

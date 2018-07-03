@@ -4,9 +4,290 @@ $width:1090px;
     height:7844px;
     background:pink;
     margin:0 auto;
+    /*brand*/
     .brand{
         width:$width;
         height:18px;
-        
+        padding:12px 0 18px 0;
+        text-indent:2px;
+        color:#555;
+        a{
+            color:#555;
+        }
+        span{
+            padding:0 5px;
+        }
+    }
+    /*freeze*/
+    .freeze{
+        width:$width;
+        height:525px;
+        background:#f90;
+        border:1px solid #ddd;
+        padding:20px;
+        margin:0 0 10px 0;
+        /*left*/
+        .free-left{
+            width:370px;
+            height:480px;
+            background:yellow;
+            float:left;
+            /*f-l-1*/
+            .f-l-1{
+                width:350px;
+                height:350px;
+                position:relative;
+                img{
+                    width:100%;
+                    height:100%;
+                    position:absolute;
+                    top:0;
+                    left:0px;
+                }
+            }
+            /*f-l-2*/
+            .f-l-2{
+                width:370px;
+                height:65px;
+                margin-bottom:6px;
+                .prevStop{
+                    color:#b4b4b4;
+                    float: left;
+                    border: 1px solid #e6e6e6;
+                    display: block;
+                    width: 10px;
+                    height: 55px;
+                    text-align: center;
+                    line-height: 55px;
+                    font-family: "宋体";
+                    font-weight: bold;
+                    margin: 5px 0 0 0;
+                }
+                .smallImg{
+                    width:314px;
+                    height:65px;
+                    float: left;
+                    margin: 5px 6px;
+                    display: inline;
+                    overflow: hidden;
+                    ul{
+                        height: 65px;
+                        overflow: hidden;
+                        li{
+                            float: left;
+                            margin: 0 7px 0 0;
+                            padding: 5px 0 0 0;
+                            width: 57px;
+                            cursor: pointer;
+                            display: inline;
+                            position: relative;
+                            top: auto;
+                            left: auto;
+                            i{
+                                display: inline-block;
+                                width: 0;
+                                height: 0;
+                                border-left: 5px solid transparent;
+                                border-right: 5px solid transparent;
+                                border-bottom: 5px solid #ed145b;
+                                position: absolute;
+                                z-index: 1;
+                                top: 0;
+                                left: 23px;
+                            }
+                            a{
+                                color: #969696;
+                                img{
+                                    width: 51px;
+                                    height: 51px;
+                                    padding: 1px;
+                                    border: #e6e6e6 solid 1px;
+                                    border-color:#ed145b;
+                                }
+                            }
+                        }
+                    }
+                }
+                .nextStop{
+                    color:#b4b4b4;
+                    float: left;
+                    border: 1px solid #e6e6e6;
+                    display: block;
+                    width: 10px;
+                    height: 55px;
+                    text-align: center;
+                    line-height: 55px;
+                    font-family: "宋体";
+                    font-weight: bold;
+                    margin: 5px 0 0 0;
+                }
+            }
+            /*f-l-3*/
+            .f-l-3{
+                width:370px;
+                height:28px;
+                a{
+                    width:17px;
+                    height:16px;
+                    float: left;
+                    color: #333;
+                    font-size: 12px;
+                    padding-left: 10px;
+                    line-height: 16px;
+                    background:url(/img/icon_detail_bottom.png) no-repeat;
+                    cursor: pointer;
+                    margin: 6px 6px 6px 0;
+                }
+                .bds_more{
+                }
+                .bds_qzone{
+                    background-position:0 -52px;
+                }
+                .bds_tsina{
+                    background-position:0 -104px;
+                }
+                .bds_tqq{
+                    background-position:0 -260px;
+                }
+                .bds_renren{
+                    background-position:0 -208px;
+                }
+                .bds_weixin{
+                    background-position:0 -1612px;
+                }
+            }
+            /*f-l-4*/
+            .f-l-4{
+                width:68px;
+                height:21px;
+                position: relative;
+                float: right;
+                right: 20px;
+                top: -25px;
+                input{
+                    background: url(/img/like_01.png) no-repeat;
+                    width: 68px;
+                    height: 21px;
+                    cursor: pointer;
+                    border: none;
+                    vertical-align: middle;
+                }
+            }
+        }
+        /*right*/
+        .free-right{
+            width:650px;
+            height:483px;
+            background:plum;
+            float:right;
+            /*free-right-1*/
+            .free-right-1{
+                font-size:24px;
+                color:gray;
+                font-weight:normal;
+            }
+            /*free-right-2*/
+            .free-right-2{
+                width:650px;
+                height:70px;
+                padding:0 0 15px 0;
+                margin:5px 0 8px 0;
+                border-bottom:1px dotted #ddd;
+                color:#969696;
+            }
+            /*free-right-3*/
+            .free-right-3{
+                width:650px;
+                height:23px;
+                padding:5px 0 0 0;
+                em{
+                    display: inline-block;
+                    width: 65px;
+                    font-style:normal;
+                    color:#969696;
+                }
+                span{
+                    text-decoration:line-through;
+                    color:#969696;
+                    margin-left:-10px;
+                }
+            }
+            /*free-right-4*/
+            .free-right-4{
+                width:650px;
+                height:42px;
+                padding:6px 0 0 0;
+                .f-r-4-left{
+                    float:left;
+                    color:#969696;
+                    em{
+                        display:inline-block;
+                        width:65px;
+                        font-style:normal;
+                    }
+                    b{
+                        font-size:24px;
+                        color:#ed1475;
+                        font-weight:bold;
+                    }
+                }
+                .f-r-4-right{
+                    float:right;
+                    margin:10px 0 0 0;
+                    color:#969696;
+                    big{
+                        color:#ed1475;
+                    }
+                    a{
+                        color:#969696;
+                        display:none;
+                        b{
+                            color:#ed1475;
+                        }
+                    }
+                }
+                .f-r-4-right:hover a{
+                    display:block;
+                }
+            }
+            /*free-right-5*/
+            .free-right-5{
+                width:650px;
+                height:234px;
+                margin:12px 0 0 0;
+                .r-5-wrap{
+                    height:234px;
+                    .r-5-wrap-a{
+                        height:25px;
+                        color:#969696;
+                        em{
+                            width:65px;
+                            height:18px;
+                            display: inline-block;
+                            span{
+                                margin:0 21px 0 0;
+                            }
+                        }
+                        .star{
+                            width: 71px;
+                            height: 10px;
+                            margin:-3px 0 0 0;
+                            display: inline-block;
+                            background: url(/img/detail_xin.jpg) no-repeat;
+                            b{
+                                width: 71px;
+                                height: 10px;
+                                width:100%;
+                                display: inline-block;
+                                background: url(/img/detail_xin.jpg) no-repeat;
+                                background-position: 0 -12px;
+                                vertical-align: top;
+                            }
+                        }
+                    }
+                }
+            }
+            /*free-right-6*/
+        }
     }
 }
