@@ -24,6 +24,12 @@ gulp.task("js", function(){
 		.pipe(connect.reload()); // 浏览器自动刷新
 });
 
+// 复制font到 dist 下
+gulp.task("copy-font", function(){
+	gulp.src("src/font/**/*.*")
+		.pipe(gulp.dest("dist/font"))
+});
+
 // 复制 lib 目录到 dist 下
 gulp.task("copy-lib", function(){
 	gulp.src("src/lib/**/*.*")

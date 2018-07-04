@@ -69,7 +69,7 @@
         // 渲染模板
         const html = template("hot_sale_temp", {list : data.res_body.list});
         // 显示
-        $(".grid_2").prepend(html);
+        $(".grid_2").prepend(html);//prepend:往前添加
         //console.log(html);
       });
     });
